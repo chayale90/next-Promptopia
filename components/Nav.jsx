@@ -39,7 +39,7 @@ const Nav = () => {
               creat new post
             </Link>
 
-            <botton type="botton" onClick={signOut} className="outline_btn">sign out</botton>
+            <button type="button" onClick={signOut} className="outline_btn">sign out</button>
 
             <Link href="/profile">
             <Image src={session?.user.image}
