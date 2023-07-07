@@ -6,6 +6,8 @@ import PromptCartList from './PromptCartList';
 const Feed = () => {
   const [posts, setPosts] = useState([]);
   const [searchText, setSearchText] = useState('');
+  const [searchTimeOut, setSearchTimeOut] = useState('');
+  const [searchResult, setSearchResult] = useState([]);
 
   useEffect(() => {
     fetchPosts()
@@ -19,6 +21,7 @@ const Feed = () => {
   }
 
   const handleSeachChange = (e) => {
+    console.log(e.target.value);
     setSearchText(e.target.value);
   }
 

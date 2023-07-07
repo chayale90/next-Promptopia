@@ -62,7 +62,7 @@ const PromptCart = ({ post, handleTagClick, handleDelete, handleEdit }) => {
             Edit
           </p>
           <p className='font-inter text-sm orange_gradient cursor-pointer'
-            onClick={handleDelete}
+            onClick={() => handleDelete && handleDelete(post)}
           >
             Delete
           </p>
