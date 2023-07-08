@@ -6,7 +6,7 @@ import Form from "@components/Form";
 
 const UpdatePrompt = () => {
     const router = useRouter();
-    const [submitting, setIsSubmitting] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
     const [post, setPost] = useState({ prompt: "", tag: "" });
     const searchParams = useSearchParams();
     const promptId = searchParams.get('id');
@@ -43,6 +43,7 @@ const UpdatePrompt = () => {
                 router.push("/");
             }
             console.log(response);
+
         } catch (error) {
             console.log(error);
         } finally {
@@ -55,7 +56,7 @@ const UpdatePrompt = () => {
             type='Edit'
             post={post}
             setPost={setPost}
-            submitting={submitting}
+            isSubmitting={isSubmitting}
             handleSubmit={updatePrompt}
         />
     );
