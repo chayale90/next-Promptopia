@@ -42,13 +42,15 @@ const MyProfile = () => {
     }
 
     return (
-        <Profile
-            name="my"
-            desc="Welcome to your personalied profile page"
-            data={posts}
-            handleEdit={handleEdit}
-            handleDelete={handleDelete}
-        />
+     
+            <Profile
+                name="my"
+                desc="Welcome to your personalied profile page"
+                data={posts}
+                handleEdit={handleEdit}
+                handleDelete={handleDelete}
+            />
+      
     )
 }
 

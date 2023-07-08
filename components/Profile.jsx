@@ -2,7 +2,7 @@ import PromptCart from "./PromptCart"
 
 const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
   return (
-    <section className="w-full">
+    <section>
       <h1 className="head_text">
         <span className="blue_gradient"> {name} profile</span>
       </h1>
@@ -19,7 +19,6 @@ const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
           )
         })}
       </div>
-
     </section>
   )
 }
